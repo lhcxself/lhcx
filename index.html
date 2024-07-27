@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>test</title>
+    <style>
+      body {
+        margin: 0;
+        height: 1vh;
+        background-color: #eee;
+      }
+
+      * {
+        border: 0px solid black;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .flex1 {
+        flex: 1;
+      }
+
+      .colunm {
+        flex-direction: column;
+      }
+
+      .flex2 {
+        flex: 2;
+      }
+      .flex {
+        flex: 3;
+      }
+      #header{
+        position: fixed;
+        top: 160px;
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!--第一层盒子-->
+    <div style="background-color: #e3e3e3" class="flex1"></div>
+    <!--开始区域-->
+    <!--第二层盒子-->
+    <div
+      style="background-color: #d6d6d6; flex-direction: column"
+      class="flex2 flex"
+    >
+      <div
+        style="
+
+          margin: 0px;
+          border: 0;
+          padding: 20px;
+          text-align: center;
+          background-color: #ffdee8;
+          border-radius: 25px;
+        "
+        class="column"
+      >
+        <p><font size="4">浪花春雪个人网站</font></p>
+        <img
+          src="https://github.com/lhcxself/lhcx/blob/main/preview_test.jpg?raw=true"
+          width="70"
+          height="70"
+        ></img>
+      </div>
+
+      <!--主区域-->
+      <!--第二层盒子-->
+      <div
+        style="
+          border-radius: 25px;
+          flex-direction: column;
+          padding: 120px;
+          background-color: #d0e5d1;
+          margin:  0px;
+
+        "
+        class="flex2 flex"
+      >
+        <!--第三层盒子-->
+        <div style=" flex-direction: column;text-align: center;margin: 0px;" 
+            class="flex1"
+            >
+          <p><font size="3">专业：计算机科学与技术</font></p>
+          <p><font size="3">学校:fosu大学</font></p>
+          <p><font size="3">p站个人主页：</font></p>
+          <a href="https://www.pixiv.net/users/77495009">pixiv</a>
+        </div>
+        <!--第三层盒子-->
+        <div style="text-align: center; flex-direction: column;" class="flex2">
+          
+          <img
+          src="https://raw.githubusercontent.com/lhcxself/lhcx/main/nana.jpg"
+          width="450"
+          height="600"
+        ></img>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #e3e3e3" class="flex1"></div>
+  </body>
+  <html></html>
+</html>
